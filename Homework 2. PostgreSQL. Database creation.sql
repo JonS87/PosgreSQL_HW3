@@ -44,5 +44,3 @@ create table if not exists TracksCollections (
 	Track_id integer not null references Tracks(Track_id),
 	Collection_id integer not null references Collections(Collection_id)
 );
-
-ALTER TABLE tracks ALTER COLUMN duration type int4;
